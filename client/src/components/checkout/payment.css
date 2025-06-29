@@ -1,0 +1,55 @@
+.confirmed-page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, Inter, sans-serif;
+}
+
+.tick {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.pay-details {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.pay-details h4 {
+  margin: 0 0 0.75rem;
+}
+
+.pay-details table {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.pay-details td:first-child {
+  text-align: left;
+  color: #6b7280;
+}
+
+.pay-details td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.receipt-note {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.75rem;
+}
+
+.qr-btn {
+  background: linear-gradient(90deg, #fcc888, #eac598);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+}

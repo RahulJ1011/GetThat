@@ -1,0 +1,258 @@
+.canteen-select-page,
+.menu-page {
+  max-width: 480px;                 
+  margin: 0 auto;
+  padding: 1rem 1rem 0;
+  font-family: system-ui, -apple-system, Inter, sans-serif;
+  color: #1f2937;
+}
+
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.greeting h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.greeting p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.header-icons span {
+  font-size: 1.2rem;
+}
+
+
+.choose-title {
+  margin: 1.25rem 0 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.choose-title span {
+  color: #fc8019;
+}
+
+.choose-sub {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+
+.canteen-card {
+  position: relative;
+  height: 120px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.15s;
+}
+
+.canteen-card:hover {
+  transform: translateY(-2px);
+}
+
+.canteen-card.large {
+  height: 160px;
+}
+
+.canteen-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  color: #fff;
+}
+
+.canteen-card h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.canteen-card p {
+  margin: 0.1rem 0 0;
+  font-size: 0.8rem;
+}
+
+
+.canteen-list {
+  display: flex;              
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-banner {
+  position: relative;
+  height: 170px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.menu-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.menu-banner h2,
+.menu-banner span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.menu-banner h2 {
+  top: 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.menu-banner span {
+  bottom: 8px;
+  font-size: 0.8rem;
+}
+
+.menu-intro h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.menu-intro h3 span {
+  font-weight: 500;
+}
+
+.menu-intro p {
+  margin: 0.25rem 0 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.section-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.food-list {
+  display: flex;             
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.food-card {
+  position: relative;
+  height: 120px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.food-card:hover {
+  transform: translateY(-2px);
+}
+
+.food-label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.food-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.65rem;
+  color: #fff;
+}
+
+.food-overlay h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.food-overlay p {
+  margin: 0.1rem 0 0;
+  font-size: 0.8rem;
+}
+
+
+@media (min-width: 768px) {
+  .canteen-select-page,
+  .menu-page {
+    max-width: 1200px;            
+    padding: 2rem 2rem 0;
+  }
+
+ 
+  .canteen-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .canteen-card {
+    margin-bottom: 0;           
+  }
+
+  .canteen-card.large {
+    grid-column: span 2;          
+    height: 220px;
+  }
+
+  .food-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .food-card {
+    height: 180px;
+  }
+}
+

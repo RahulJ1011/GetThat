@@ -1,0 +1,104 @@
+
+:root {
+  --primary: #fc8019;        
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+}
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(120deg, #fff7ed 0%, #fff1f2 100%);
+  font-family: system-ui, -apple-system, Inter, sans-serif;
+  color: var(--text-dark);
+}
+
+.hero {
+  flex: 1;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hero-title span {
+  color: var(--primary);
+}
+
+.hero-subtitle {
+  max-width: 660px;
+  margin: 1.25rem auto 2.5rem;
+  font-size: 1.125rem;
+  color: var(--text-light);
+}
+
+
+.cta-button {
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.12s;
+}
+
+.cta-button:hover {
+  background: #fb6b00;
+}
+
+.cta-button:active {
+  transform: scale(0.97);
+}
+
+
+.features {
+  background: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.features h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  font-size: 1rem;
+}
+
+.features li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.features li::before {
+  content: \"✓\";
+  color: var(--primary);
+  font-weight: 700;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
