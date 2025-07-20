@@ -8,6 +8,7 @@ import CanteenSelectionPage from './Pages/CanteenSelectionPage';
 import PaymentConfirmedPage from './Pages/PaymentConfirmed';
 import PaymentGateWayPage from './Pages/PaymentGateWayPage';
 import QrCodePage from './Pages/QrCodePage';
+import OTP from './Pages/OTP';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
       <Route path="/payment" element={<PaymentGateWayPage />} />
       <Route path="/payment/confirmed" element={<PaymentConfirmedPage />} />
       <Route path="/payment/qr" element={<QrCodePage />} />
+      <Route path='/otp' element={<OTP />} />
      </Routes>
     </div>
   );
