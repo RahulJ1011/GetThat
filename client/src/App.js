@@ -9,12 +9,14 @@ import PaymentConfirmedPage from './Pages/PaymentConfirmed';
 import PaymentGateWayPage from './Pages/PaymentGateWayPage';
 import QrCodePage from './Pages/QrCodePage';
 import OTP from './Pages/OTP';
+import CanteenInside from './Pages/CanteenInside';
 function App() {
   return (
     <div className="App">
      <Routes>
       <Route path='/auth' element={<Authentication />} />
       <Route path='/' element={<HomePage />} />
+      <Route path='/mainCanteen' element={<CanteenInside />} />
       <Route path="/canteens" element={<CanteenSelectionPage />} />
       <Route path="/canteens/:id" element={<CanteenMenuPage />} />
       <Route path="/payment" element={<PaymentGateWayPage />} />

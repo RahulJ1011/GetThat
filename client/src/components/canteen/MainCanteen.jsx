@@ -1,51 +1,43 @@
 import React from 'react';
 import './MainCanteen.css';
-
-const foodItems = new Array(8).fill({
+import welcome from "../../assets/welcome.jpg"
+const foodItems = Array(12).fill({
   name: 'Chicken Biryani',
   price: '$123',
-  code: 'S123',
-  availability: 'Available',
-  image: 'https://i.imgur.com/nJ2K2kU.png', 
+  available: true,
+  image: welcome // Replace with actual image
 });
 
 export default function MainCanteen() {
   return (
-    <div className="canteen-container">
-      <header className="canteen-header">
-        <span className="back-arrow">←</span>
-        <h2>Main canteen</h2>
-      </header>
-
-      <div className="search-box">
-        <input type="text" placeholder="Search" />
-        <span className="search-icon">🔍</span>
-      </div>
-
+    <div className="menu-container">
+    <h2 className="menu-heading">Main Canteen</h2>
       <div className="food-grid">
         {foodItems.map((item, index) => (
-          <div key={index} className="food-card">
-            <img src={item.image} alt="Biryani" />
-            <h4>{item.name}</h4>
-            <p>Price: <span className="green">{item.price}</span></p>
-            <p>Code: {item.code}</p>
-            <p className="availability">{item.availability}</p>
-            <button>Add to Cart</button>
+          <div className="food-card" key={index}>
+            <img src={item.image} alt={item.name} className="food-img" />
+            <div className="food-details">
+              <h3>{item.name}</h3>
+              <p className="price">{item.price}</p>
+              <p className={`availability ${item.available ? 'green' : 'red'}`}>
+                {item.available ? '✅ Available' : '❌ Not Available'}
+              </p>
+              <button className="add-btn">Add to Cart</button>
+            </div>
           </div>
         ))}
       </div>
-
-      <footer className="canteen-footer">
-        <div className="cart-preview">
-          <img src="https://i.imgur.com/nJ2K2kU.png" alt="item" />
-          <img src="https://i.imgur.com/nJ2K2kU.png" alt="item" />
-          <img src="https://i.imgur.com/nJ2K2kU.png" alt="item" />
+      <div className="cart-summary">
+        <div className="cart-items">
+          <img src={welcome} alt="item" />
+          <img src={welcome} alt="item" />
+          <img src={welcome} alt="item" />
         </div>
-        <div className="price-section">
-          <span>Price : $123</span>
-          <button className="pay-now">Paynow</button>
+        <div className="pay-row">
+          <span>Price: $123</span>
+          <button className="pay-btn">Pay Now</button>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
