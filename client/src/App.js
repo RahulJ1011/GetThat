@@ -10,6 +10,7 @@ import PaymentGateWayPage from './Pages/PaymentGateWayPage';
 import QrCodePage from './Pages/QrCodePage';
 import OTP from './Pages/OTP';
 import CanteenInside from './Pages/CanteenInside';
+import OrderConfirmationPage from './Pages/OrderConfirmationPage';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
       <Route path="/payment" element={<PaymentGateWayPage />} />
       <Route path="/payment/confirmed" element={<PaymentConfirmedPage />} />
       <Route path="/payment/qr" element={<QrCodePage />} />
+      <Route path='/order' element={<OrderConfirmationPage />} />
       <Route path='/otp' element={<OTP />} />
      </Routes>
     </div>
