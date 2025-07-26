@@ -10,7 +10,6 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, "Inter", sans-serif;
 
-  /* 1️⃣  Solid fallback colour */
   background-color: #fff7ed;          
  
   background-image:
