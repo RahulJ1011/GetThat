@@ -1,11 +1,12 @@
 import React from 'react';
 import './MainCanteen.css';
 import welcome from "../../assets/welcome.jpg"
+import rice from "../../assets/RIce.jpg"
 const foodItems = Array(12).fill({
   name: 'Chicken Biryani',
   price: '$123',
   available: true,
-  image: welcome // Replace with actual image
+  image: rice // Replace with actual image
 });
 
 export default function MainCanteen() {
@@ -29,9 +30,9 @@ export default function MainCanteen() {
       </div>
       <div className="cart-summary">
         <div className="cart-items">
-          <img src={welcome} alt="item" />
-          <img src={welcome} alt="item" />
-          <img src={welcome} alt="item" />
+          <img src={rice} alt="item" />
+          <img src={rice} alt="item" />
+          <img src={rice} alt="item" />
         </div>
         <div className="pay-row">
           <span>Price: $123</span>
