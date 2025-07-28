@@ -5,7 +5,7 @@ import NavBar from '../components/Navbar/Navbar'
 const CanteenInside = () => {
   return (
     <div>
-        <NavBar />
+       
         <MainCanteen />
     </div>
   )

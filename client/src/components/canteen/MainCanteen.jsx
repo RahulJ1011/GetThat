@@ -13,6 +13,21 @@ export default function MainCanteen() {
   return (
     <div className="menu-container">
     <h2 className="menu-heading">Main Canteen</h2>
+
+<div style={{ marginBottom: '1rem' }}>
+  <input
+    type="text"
+    placeholder="Search"
+    style={{
+      width: '100%',
+      padding: '10px 12px',
+      borderRadius: '12px',
+      border: '1px solid #ccc',
+      fontSize: '14px',
+    }}
+  />
+</div>
+
       <div className="food-grid">
         {foodItems.map((item, index) => (
           <div className="food-card" key={index}>

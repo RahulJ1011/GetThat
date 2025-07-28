@@ -5,7 +5,7 @@ import { Checkout } from '../components/checkout/Checkout'
 const PaymentGateWayPage = () => {
   return (
     <div>
-        <NavBar />
+       
         <Checkout />
     </div>
   )

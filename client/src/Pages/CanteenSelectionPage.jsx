@@ -5,7 +5,7 @@ import CanteenSelection from '../components/canteen/CanteenSelection'
 const CanteenSelectionPage = () => {
   return (
     <div>
-        <NavBar />
+        
         <CanteenSelection />
     </div>
   )
