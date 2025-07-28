@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./qrcode.css"
+import logo from "../../assets/logo.jpg"
 export function QrCode() {
   const navigate = useNavigate();
 
@@ -8,9 +9,16 @@ export function QrCode() {
 
   return (
     <main className="qr-page">
-      <h1 className="brand">GET THAT</h1>
-      <p className="tagline">Break Time is Short – Get That Fast</p>
-
+     <div className="logo-section">
+               <img
+                 src={logo}
+                 alt="Get That Logo"
+                 className="logo"
+               />
+               <h2 className="brand-text">GET THAT</h2>
+               <p className="tagline">Break Time is Short - Get That Fast</p>
+             </div>
+      
       <p className="qr-instruction">
         Show this <span>QR code</span> at the counter & grab your food <strong>– No QR, No Food!</strong>
       </p>
