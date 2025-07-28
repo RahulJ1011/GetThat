@@ -1,4 +1,4 @@
-/* Login.css */
+
 
 .login-container {
   min-height: 100vh;
@@ -81,7 +81,7 @@
 }
 
 .login-button {
-  background: linear-gradient(to right, orange, gold);
+  background: linear-gradient(to right, #fbc683, #e3ba9e);
   color: white;
   border: none;
   padding: 12px;

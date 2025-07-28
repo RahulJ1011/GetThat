@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {Route,Routes} from "react-router-dom"
-import Authentication from './Pages/Authentication';
+
 import HomePage from './Pages/HomePage';
 import CanteenMenuPage from './Pages/CanteenMenuPage';
 import CanteenSelectionPage from './Pages/CanteenSelectionPage';
@@ -11,11 +11,14 @@ import QrCodePage from './Pages/QrCodePage';
 import OTP from './Pages/OTP';
 import CanteenInside from './Pages/CanteenInside';
 import OrderConfirmationPage from './Pages/OrderConfirmationPage';
+import Login from './components/Auth/Login';
+import Signup from './components/Auth/Signup';
 function App() {
   return (
     <div className="App">
      <Routes>
-      <Route path='/auth' element={<Authentication />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
       <Route path='/' element={<HomePage />} />
       <Route path='/mainCanteen' element={<CanteenInside />} />
       <Route path="/canteens" element={<CanteenSelectionPage />} />
