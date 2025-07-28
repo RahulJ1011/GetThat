@@ -114,7 +114,7 @@ body {
 }
 
 .pay-btn {
-  background: #fc8019;
+  background: linear-gradient(to right, #f6ad55, #ddd);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 12px;

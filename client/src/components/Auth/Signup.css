@@ -1,0 +1,114 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.form-box {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 80px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.highlight {
+  color: orange;
+}
+
+.subtext {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+}
+
+form select {
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.85rem;
+  color: #444;
+  margin: 1rem 0;
+}
+
+.checkbox-wrapper input {
+  margin-right: 0.5rem;
+  margin-top: 0.15rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(to right, #fbc683, #e3ba9e);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .signup-container {
+    padding: 4rem;
+  }
+
+  .form-box {
+    max-width: 500px;
+    padding: 3rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}

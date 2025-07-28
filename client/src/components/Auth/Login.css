@@ -1,0 +1,103 @@
+/* Login.css */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  height: 64px;
+  width: 64px;
+}
+
+.logo-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.logo-subtitle {
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.title-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.title-section .highlight {
+  color: orange;
+}
+
+.subtext {
+  font-size: 14px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.form-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-field {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.password-section {
+  position: relative;
+}
+
+.forget-text {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 12px;
+  color: orange;
+  cursor: pointer;
+}
+
+.login-button {
+  background: linear-gradient(to right, orange, gold);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: gray;
+}
+
+.signup-link {
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
