@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Otp.css";
-
+import logo from "../../assets/logo.jpg"
 const OtpVerification = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
   const [timer, setTimer] = useState(30);
@@ -30,9 +30,9 @@ const OtpVerification = () => {
   return (
     <div className="otp-container">
       <div className="logo-section">
-        <img src="logo.png" alt="Logo" className="logo" />
-        <h1 className="brand-title">GET<br />THAT</h1>
-        <p className="brand-subtitle">Break Time Is Short<br />- Get That Fast</p>
+        <img src={logo} alt="Logo" className="logo" />
+       {/*  <h1 className="brand-title">GET<br />THAT</h1>
+        <p className="brand-subtitle">Break Time Is Short<br />- Get That Fast</p> */}
       </div>
 
       <div className="content-section">

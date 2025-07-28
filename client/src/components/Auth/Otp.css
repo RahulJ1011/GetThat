@@ -4,7 +4,7 @@
   align-items: center;
   padding: 30px 20px;
   font-family: "Segoe UI", sans-serif;
-  background: #f7f7f7;
+  background: #f2f2f2;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -47,7 +47,7 @@
 .headline {
   font-size: 22px;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 1200;
   color: #333;
 }
 
@@ -93,7 +93,7 @@
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  background: #ff6b00;
+  background: linear-gradient(to right, #fbc683, #e3ba9e);
   color: white;
   border: none;
   border-radius: 8px;
