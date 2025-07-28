@@ -1,0 +1,111 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.home-container {
+  padding: 16px;
+  max-width: 480px;
+  margin: auto;
+  position: relative;
+}
+
+/* Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header h2 {
+  margin: 0;
+}
+
+.top-header .icons span {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* Canteen cards */
+.canteen-section {
+  margin-top: 20px;
+}
+
+.canteen-card {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.canteen-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.canteen-text {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.canteen-text h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.canteen-text p {
+  margin: 4px 0 0;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  color: white;
+}
+
+.nav-item {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: orange;
+}
+
+/* Responsive for Desktop */
+@media screen and (min-width: 768px) {
+  .home-container {
+    max-width: 1024px;
+    padding: 20px;
+  }
+
+  .canteen-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .canteen-card {
+    margin-bottom: 0;
+  }
+
+  .bottom-nav {
+    width: 1024px;
+    margin: auto;
+    border-radius: 16px 16px 0 0;
+  }
+}

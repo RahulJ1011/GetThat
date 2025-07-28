@@ -1,94 +1,50 @@
-import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import "./canteen.css";
+import React from 'react';
+import './canteenSelection.css';
+import MainCanteen from "../../assets/MainCanteen.png"
+import Canteen1 from "../../assets/Canteen1.png"
+import Canteen2 from "../../assets/Canteen2.png"
+import Canteen3 from "../../assets/Canteen3.png"
+const canteens = [
+  { title: 'Main canteen', subtitle: 'Open now', image: MainCanteen },
+  { title: 'Canteen 1', subtitle: 'Open now', image: Canteen1 },
+  { title: 'Canteen 2', subtitle: 'Open now', image: Canteen2 },
+  { title: 'Canteen 3', subtitle: 'Open now', image: Canteen3 }
+];
 
-
-export function CanteenSelection() {
-  const navigate = useNavigate();
-
-
-  const canteens = [
-    {
-      id: "main",
-      name: "Main canteen",
-      banner: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=60",
-      openNow: true,
-    },
-    {
-      id: "c1",
-      name: "Canteen 1",
-      banner: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=60",
-      openNow: true,
-    },
-    {
-      id: "c2",
-      name: "Canteen 2",
-      banner: "https://images.unsplash.com/photo-1568051243853-d5a7dbe0c162?auto=format&fit=crop&w=800&q=60",
-      openNow: false,
-    },
-    {
-      id: "c3",
-      name: "Canteen 3",
-      banner: "https://images.unsplash.com/photo-1576402187870-5de31a07e6ef?auto=format&fit=crop&w=800&q=60",
-      openNow: true,
-    },
-  ];
-
+const CanteenSelection = () => {
   return (
-    <main className="canteen-select-page">
-      <header className="greeting">
+    <div className="home-container">
+      <header className="top-header">
         <div>
           <h2>Hey John,</h2>
           <p>Good morning</p>
         </div>
-        <div className="header-icons">
-          <span role="img" aria-label="bell">
-            🔔
-          </span>
+        <div className="icons">
+          <span>🔔</span>
+          <span>⚙️</span>
         </div>
       </header>
 
-      
-      <section>
-        <CanteenCard
-          canteen={canteens[0]}
-          large
-          onClick={() => navigate(`/canteens/${canteens[0].id}`)}
-        />
-      </section>
-
-      <h3 className="choose-title">
-        Where's the <span>magic</span> happening?
-      </h3>
-      <p className="choose-sub">Choose your canteen</p>
-
-      <section className="canteen-list">
-        {canteens.slice(1).map((c) => (
-          <CanteenCard
-            key={c.id}
-            canteen={c}
-            onClick={() => navigate(`/canteens/${c.id}`)}
-          />
+      <div className="canteen-section">
+        {canteens.map((item, index) => (
+          <div className="canteen-card" key={index}>
+            <img src={item.image} alt={item.title} />
+            <div className="canteen-text">
+              <h3>{item.title}</h3>
+              <p>{item.subtitle}</p>
+            </div>
+          </div>
         ))}
-      </section>
-
-      
-      <div style={{ height: "70px" }} />
-    </main>
-  );
-}
-
-function CanteenCard({ canteen, large = false, onClick }) {
-  return (
-    <article
-      className={`canteen-card ${large ? "large" : ""}`}
-      style={{ backgroundImage: `url(${canteen.banner})` }}
-      onClick={onClick}
-    >
-      <div className="overlay">
-        <h4>{canteen.name}</h4>
-        <p>{canteen.openNow ? "Open now" : "Closed"}</p>
       </div>
-    </article>
+
+      <footer className="bottom-nav">
+        <div className="nav-item active">🏠</div>
+        <div className="nav-item">❤️</div>
+        <div className="nav-item">👤</div>
+        <div className="nav-item">⚙️</div>
+      </footer>
+    </div>
   );
-}
+};
+
+export default CanteenSelection;
