@@ -22,7 +22,7 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/mainCanteen' element={<CanteenInside />} />
       <Route path="/canteens" element={<CanteenSelectionPage />} />
-      <Route path="/canteens/:id" element={<CanteenMenuPage />} />
+      <Route path="/canteens/c1" element={<CanteenMenuPage />} />
       <Route path="/payment" element={<PaymentGateWayPage />} />
       <Route path="/payment/confirmed" element={<PaymentConfirmedPage />} />
       <Route path="/payment/qr" element={<QrCodePage />} />
