@@ -10,7 +10,21 @@
   font-size: 4rem;
   margin: 1rem 0;
 }
+.back-button-container {
+  position: absolute;
+  top: 20px;    /* adjust as needed */
+  left: 20px;   /* adjust as needed */
+  z-index: 10;  /* ensure it stays on top */
+}
 
+.back-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .pay-details {
   border: 1px solid #e5e7eb;
   border-radius: 12px;

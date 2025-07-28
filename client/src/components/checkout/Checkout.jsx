@@ -16,9 +16,10 @@ export function Checkout() {
 
   return (
     <main className="payment-page">
-      <button className="back-btn" onClick={() => navigate(-1)}>
-        ←
-      </button>
+    <div className="back-button-container">
+  <button onClick={() => navigate(-1)} className="back-button">←</button>
+</div>
+
       <h2 className="page-title">Payment</h2>
 
       <ul className="pay-options">
